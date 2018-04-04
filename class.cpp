@@ -1,4 +1,4 @@
-class enterence 
+class display 
 {
   public:
   void page1()
@@ -14,3 +14,4 @@ class enterence
    cout<<b;
   }
 };
+  
