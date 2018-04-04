@@ -1,4 +1,4 @@
-class sample
-{
+#include<class.cpp>
+
   
-};
+
