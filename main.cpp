@@ -1,7 +1,7 @@
 #include<header.h>
 void main()
   {
-   enterence first;
+   display first;
   first.page1();
   }
 
