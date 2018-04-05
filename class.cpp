@@ -42,9 +42,9 @@ public:
 void read()
 {
 cout<<"Enter title:"<<endl;
-gets>>s;
+gets(s);
 cout<<"Enter description:"<<endl;
-gets>>s1;
+gets(s1);
 cout<<"Enter the date to be remainded"<<endl;
 cin>>d;
 cout<<"Enter the month in number"<<endl;
