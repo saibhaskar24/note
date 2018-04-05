@@ -34,4 +34,35 @@ class display
   
 
 };
-  
+  class set_remainder
+{
+int d,m,y;
+char s[100],s1[100];
+public:
+void read()
+{
+cout<<"Enter title:"<<endl;
+cin>>s;
+cout<<"Enter description:"<<endl;
+cin>>s1;
+cout<<"Enter the date to be remainded"<<endl;
+cin>>d;
+cout<<"Enter the month in number"<<endl;
+cin>>m;
+cout<<"Enter the year in numbers"<<endl;
+cin>>y;
+}
+void display()
+{
+time_t t;
+t=time(0);
+struct tm *k;
+k=localtime(&t);
+if((k->tm_year+1900)==y){
+if(k->tm_mon==m){
+if(k->tm_mday==d)
+cout<<s<<endl;
+cout<<s1<<endl;
+}}
+}
+};
