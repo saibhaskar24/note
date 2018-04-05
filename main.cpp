@@ -1,7 +1,26 @@
 #include<header.h>
 void main()
   {
-   display first;
-  first.page1();
+   display view;
+  view.page1();
+  opt: clrscr();
+  char option=view.options();
+  switch(option)
+    {
+     case '1' : 
+     case '2' :
+     case '3' :
+     default  : {
+                       cout<<"Invalid option";
+                       goto opt;
+                }
+     }
   }
+       
+
+        
+                     
+    
+  
+
 
