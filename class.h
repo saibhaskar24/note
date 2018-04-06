@@ -1,4 +1,0 @@
-#include<class.cpp>
-
-  
-
