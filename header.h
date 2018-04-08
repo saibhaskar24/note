@@ -3,5 +3,5 @@
 #include<dos.h>
 #include<conio.h>
 #include<fstream.h>
-#include<class.h>
+#include<class.cpp>
 #include<prototypes.h>

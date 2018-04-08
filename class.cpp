@@ -40,10 +40,17 @@ public:
 		return option;
 	}	
 };
+
 class set_remainder {
 private:
 	int date, month ,year;
 	char title[100], description[100];
+
+class reminder
+{
+int d,m,y;
+char s[100],s1[100];
+
 public:
 	void read() { //Reads required parameters for storing the information
 		cout << "Enter the title:" << endl;
