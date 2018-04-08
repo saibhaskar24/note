@@ -42,25 +42,20 @@ public:
 		return option;
 	}	
 };
-
-class set_remainder {
+//new class:remainder 
+class remainder {
 private:
 	int date, month ,year;
 	char title[100], description[100];
 	
-//New Class: reminder
-class reminder
-{
-int d,m,y;
-char s[100],s1[100];
 
 public:
 	void read() { //Reads required parameters for storing the information
 		cout << "Enter the title:" << endl;
-		gets(s);
+		gets(title);
 		
 		cout << "Write a description:" << endl;
-		gets(s1);
+		gets(description );
 		
 		cout<<"Enter the date to be remainded"<<endl;
 		cin>>date;
