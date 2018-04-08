@@ -34,7 +34,7 @@ class display
   
 
 };
-  class set_remainder
+class reminder
 {
 int d,m,y;
 char s[100],s1[100];
