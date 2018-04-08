@@ -4,6 +4,8 @@
 *	2. Try to comment the code you write.
 *	3. Specify the access specifiers even if it isn't required by the compiler.
 */
+
+//New class: display
 class display {
 public:
 	void page1() {
@@ -45,7 +47,8 @@ class set_remainder {
 private:
 	int date, month ,year;
 	char title[100], description[100];
-
+	
+//New Class: reminder
 class reminder
 {
 int d,m,y;
