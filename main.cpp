@@ -17,7 +17,7 @@ void main()
                  }
      case '2' :  {                                                          //Set reminder
                     ofstream fout;
-                    fout.open("student.txt",ios::app|ios::ate);
+                    fout.open("",ios::app|ios::ate);
                     if(!fout)
                     {
                     cout<<"File not exist ";
