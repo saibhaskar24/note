@@ -2,6 +2,7 @@
 void main()
   {
   display view;
+  char date[8];
   remainder *rem;
   view.page1();
   opt: clrscr();
@@ -9,8 +10,9 @@ void main()
   switch(option)
     {
      case '1' :  {                                                         // Check today's dashboard
+                          strcpy(date, );
                           ifstream fin;
-                          fin.open("",ios::in);
+                          fin.open(date,ios::in);
                           fin.read((char*)rem,sizeof(*rem));
        
                           rem->display();
@@ -18,21 +20,18 @@ void main()
                           goto opt;
                  }
      case '2' :  {                                                          //Set reminder
+                          cin>>date;
                           ofstream fout;
-                          fout.open("",ios::app|ios::ate);
-                          if(!fout)
-                          {
-                          cout<<"File not exist ";
-                          exit(1);}
+                          fout.open(date,ios::out);
                           rem->read();
                           fout.write((char*)rem,sizeof(*rem));
 
                           getch();
                           goto opt;
                  }
-     case '3' :  {                                                          //Show events
+     case '3' :  {        cin>>date,;                                                  //Show events
                           ifstream fin;
-                          fin.open("",ios::in);
+                          fin.open(date,ios::in);
                           fin.read((char*)rem,sizeof(*rem));
 
                           rem->display();
