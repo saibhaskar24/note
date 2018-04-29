@@ -9,7 +9,8 @@ void main()
   char option=view.options();
   switch(option)
     {
-     case '1' :  {        itoa(date, sdate,8);           // Check today's dashboard
+     case '1' :  {        rem->read();
+                          itoa(date, sdate,8);           // Check today's dashboard
                           itoa(month,smonth,8);
                           itoa(year,syear,10);
                           strcat(sdate,smonth);
