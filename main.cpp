@@ -9,12 +9,8 @@ void main()
   char option=view.options();
   switch(option)
     {
-     case '1' :  {        rem->read();
-                          itoa(date, sdate,8);           // Check today's dashboard
-                          itoa(month,smonth,8);
-                          itoa(year,syear,10);
-                          strcat(sdate,smonth);
-                          strcat(sdate,syear);
+     case '1' :  {        
+                          
                           ifstream fin;
                           fin.open(sdate,ios::in);
                           fin.read((char*)rem,sizeof(*rem));
@@ -28,6 +24,11 @@ void main()
                           ofstream fout;
                           fout.open(sdate,ios::out);
                           rem->read();
+                          itoa(date, sdate,8);           
+                          itoa(month,smonth,8);
+                          itoa(year,syear,10);
+                          strcat(sdate,smonth);
+                          strcat(sdate,syear);
                           fout.write((char*)rem,sizeof(*rem));
 
                           getch();
