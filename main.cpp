@@ -11,7 +11,7 @@ void main()
     {
      case '1' :  {        
                           
-                          ifstream fin;
+                          ifstream fin;                              //check today's dashboard
                           fin.open(sdate,ios::in);
                           fin.read((char*)rem,sizeof(*rem));
        
@@ -20,7 +20,7 @@ void main()
                           goto opt;
                  }
      case '2' :  {                                                          //Set reminder
-                          cin>>date;
+                          
                           ofstream fout;
                           fout.open(sdate,ios::out);
                           rem->read();
