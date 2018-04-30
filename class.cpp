@@ -47,9 +47,10 @@ class remainder {
 private:
 	int date, month ,year;
 	char title[100], description[100];
-	
+	char sdate[8],smonth[8],syear[10];
 
 public:
+	char file_date[8];
 	void read() { //Reads required parameters for storing the information
 		cout << "Enter the title:" << endl;
 		gets(title);
@@ -79,5 +80,15 @@ public:
 				}
 			}
 		}
+	}
+	void file_name() {
+		          
+		          
+		          itoa(date, sdate,8);           
+                          itoa(month,smonth,8);
+                          itoa(year,syear,10);
+                          strcat(sdate,smonth);
+                          strcat(sdate,syear);
+		         strcpy(file_date,sdate);
 	}
 };
