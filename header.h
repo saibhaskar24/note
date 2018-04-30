@@ -4,6 +4,5 @@
 #include<conio.h>
 #include<fstream.h>
 #include<class.cpp>
-#include<prototypes.h>
 #include<string.h>
 #include<stdlib.h>
