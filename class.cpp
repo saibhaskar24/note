@@ -91,4 +91,13 @@ public:
                           strcat(sdate,syear);
 		         strcpy(file_date,sdate);
 	}
+	void local_time() {
+			struct tm *k;
+		        k = localtime(&t);	
+			date = k->tm_mday;
+		        month = k->tm_mon;
+			year = k -> tm_year + 1900;
+		        file_name();
+	}
+		
 };
