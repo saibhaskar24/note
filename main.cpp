@@ -2,7 +2,8 @@
 void main()
   {
   display view;
-  char sdate[8],smonth[8],syear[10];
+  struct tm *k;
+	k = localtime(&t);
   remainder *rem;
   view.page1();
   opt: clrscr();
@@ -20,21 +21,14 @@ void main()
                           goto opt;
                  }
      case '2' :  {                                                          //Set reminder
-                          
                           ofstream fout;
-                          fout.open(sdate,ios::out);
+                          fout.open(rem->file_date,ios::out);
                           rem->read();
-                          itoa(date, sdate,8);           
-                          itoa(month,smonth,8);
-                          itoa(year,syear,10);
-                          strcat(sdate,smonth);
-                          strcat(sdate,syear);
                           fout.write((char*)rem,sizeof(*rem));
-
                           getch();
                           goto opt;
                  }
-     case '3' :  {        cin>>date,;                                                  //Show events
+     case '3' :  {        cin>>sdate,;                                                  //Show events
                           ifstream fin;
                           fin.open(sdate,ios::in);
                           fin.read((char*)rem,sizeof(*rem));
