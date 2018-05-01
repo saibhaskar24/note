@@ -68,19 +68,13 @@ public:
 		cin>>year;
 	}
 	void display() { //Checks for data and prints accordingly *Modification Required*
-		time_t t;
-		t = time(0);
-		struct tm *k;
-		k = localtime(&t);
-		if((k -> tm_year + 1900) == year) {
-			if(k->tm_mon==month) {
-				if(k->tm_mday==date) {
+		
 					cout << title << endl;
 					cout << description<< endl;
-				}
-			}
-		}
-	}
+				
+			
+	
+	
 	void file_name() {
 		          
 		          
