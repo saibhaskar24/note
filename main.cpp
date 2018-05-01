@@ -36,6 +36,11 @@ void main()
                           getch();
                           goto opt;
                   }
+    case '4'   : { 
+	                 cout<<"Thanks for using TaTa";
+	    		getch();
+	                  exit(o);
+    		}
      default  :  {
                        cout<<"Invalid option";
                        goto opt;
