@@ -72,9 +72,7 @@ public:
 					cout << title << endl;
 					cout << description<< endl;
 				
-			
-	
-	
+	}
 	void file_name() {
 		          
 		          
