@@ -85,6 +85,8 @@ public:
 	}
 	void local_time() {
 			struct tm *k;
+		time_t t=time(0);
+		
 		        k = localtime(&t);	
 			date = k->tm_mday;
 		        month = k->tm_mon;
