@@ -83,9 +83,9 @@ public:
 			struct tm *k;
 			time_t t=time(0);
 			k = localtime(&t);
-			itoa(date,k->tm_mday);
-			itoa(month,k->tm_mon);
-			itoa(year,k -> tm_year + 1900);
+			itoa(k->tm_mday,date,10);
+			itoa(k->tm_mon,date,10);
+			itoa(k->tm_year + 1900,year,10);
 			file_name();
 	}
 
