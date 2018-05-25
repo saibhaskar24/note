@@ -81,12 +81,11 @@ public:
 	}
 	void local_time() {
 			struct tm *k;
-		time_t t=time(0);
-
+			time_t t=time(0);
 			k = localtime(&t);
-			date = k->tm_mday;
-			month = k->tm_mon;
-			year = k -> tm_year + 1900;
+			itoa(date,k->tm_mday);
+			itoa(month,k->tm_mon);
+			itoa(year,k -> tm_year + 1900);
 			file_name();
 	}
 
