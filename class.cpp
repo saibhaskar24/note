@@ -13,16 +13,12 @@ public:
 	char options() { //Displays the available options and takes input from user for the required operation
 		gotoxy(25, 10);
 		cout << "1. Check today's dashboard.";
-
 		gotoxy(25,11);
 		cout << "2. Set reminder.";
-
 		gotoxy(25,12);
 		cout << "3. Show events.";
-		
 		gotoxy(25,13);
 		cout << "4. Exit.";
-
 		char option;
 		gotoxy(25,14);
 		cout << "Enter your option: ";
@@ -55,7 +51,7 @@ private:
 	char title[100], description[100];
 
 public:
-	char file_name[8];
+	char file_date[8];
 	void read() { //Reads required parameters for storing the information
 		cout << "Enter the title:" << endl;
 		gets(title);
@@ -69,15 +65,16 @@ public:
 		cin>>year;
 	}
 	void display() { //Checks for data and prints accordingly *Modification Required*
-
+					cout<<"Title:\n";
 					cout << title << endl;
+					cout<<"Description:\n";
 					cout << description<< endl;
 
 	}
 	void file_name() {
-			  strcpy(file_name,date);
-			  strcat(file_name,month);
-			 strcpy(file_name,year);
+			  strcpy(file_date,date);
+			  strcat(file_date,month);
+			 strcpy(file_date,year);
 	}
 	void local_time() {
 			struct tm *k;
