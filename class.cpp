@@ -77,13 +77,15 @@ public:
 			 strcpy(file_date,year);
 	}
 	void local_time() {
-			struct tm *k;
-			time_t t=time(0);
-			k = localtime(&t);
-			itoa(k->tm_mday,date,10);
-			itoa(k->tm_mon,date,10);
-			itoa(k->tm_year + 1900,year,10);
-			file_name();
+	char date[8];
+	_strdate(date);
+	file_date[0] = date[3];
+	file_date[1] = date[4];	
+	file_date[2] = date[0];
+	file_date[3] = date[1];
+	file_date[4] = '2';
+	file_date[5] = '0';
+	file_date[6] = date[6];
+	file_date[7] = date[7];	
 	}
-
 };
