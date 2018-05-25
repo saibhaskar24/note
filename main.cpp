@@ -51,8 +51,11 @@ reminder *rem;
 			 exit(0);
 		}
      default  :  {
-		       cout<<"Invalid option.";
-		       goto opt;
+			clrscr();
+	     		gotoxy(25,10);
+	     		cout<<"Invalid option.";
+	     		delay(2000);
+	     		goto opt;
 		 }
      }
   }
