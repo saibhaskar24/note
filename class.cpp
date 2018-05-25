@@ -51,25 +51,20 @@ void display :: page1() {
 //new class:reminder
 class reminder {
 private:
-	int date, month ,year;
+	char date[2], month[2] ,year[4];
 	char title[100], description[100];
-	char sdate[8],smonth[8],syear[10];
 
 public:
-	char file_date[8];
+	char file_name[8];
 	void read() { //Reads required parameters for storing the information
 		cout << "Enter the title:" << endl;
 		gets(title);
-
 		cout << "Write a description:" << endl;
 		gets(description );
-
 		cout<<"Enter the date to be reminded"<<endl;
 		cin>>date;
-
 		cout<<"Enter the month in number"<<endl;
 		cin>>month;
-
 		cout<<"Enter the year in numbers"<<endl;
 		cin>>year;
 	}
@@ -80,14 +75,9 @@ public:
 
 	}
 	void file_name() {
-
-
-			  itoa(date, sdate,8);
-			  itoa(month,smonth,8);
-			  itoa(year,syear,10);
-			  strcat(sdate,smonth);
-			  strcat(sdate,syear);
-			 strcpy(file_date,sdate);
+			  strcpy(file_name,date);
+			  strcat(file_name,month);
+			 strcpy(file_name,year);
 	}
 	void local_time() {
 			struct tm *k;
