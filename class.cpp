@@ -74,7 +74,7 @@ public:
 	void file_name() {
 			  strcpy(file_date,date);
 			  strcat(file_date,month);
-			 strcpy(file_date,year);
+			 strcat(file_date,year);
 	}
 	void local_time() {
 	char date[8];
